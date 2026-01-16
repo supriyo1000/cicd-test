@@ -21,9 +21,6 @@ jobs:
       - name: Run test
         run: npm test
 
-      - name: Inspect runner
-        run: |
-          pwd
-          ls -la
-          node -v
-          npm -v
+        env:
+          NODE_ENV: test
+
